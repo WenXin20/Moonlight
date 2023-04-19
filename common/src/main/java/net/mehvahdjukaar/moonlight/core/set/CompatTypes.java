@@ -402,6 +402,8 @@ public class CompatTypes {
                 "twilightforest", "beanstalk", "beanstalk_leaves", "twilightforest:twilight_oak"));
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "twilightforest", "thorn", "thorn_leaves", "twilightforest:twilight_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "twilightforest", "hedge", "hedge", "twilightforest:twilight_oak"));
 
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "ulterlands", "souldrained", "souldrained_leaves", "oak"));
