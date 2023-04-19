@@ -1,10 +1,12 @@
 package net.mehvahdjukaar.moonlight.core.set;
 
+import net.mehvahdjukaar.moonlight.api.client.TextureCache;
 import net.mehvahdjukaar.moonlight.api.set.BlockSetAPI;
 import net.mehvahdjukaar.moonlight.api.set.leaves.LeavesType;
 import net.mehvahdjukaar.moonlight.api.set.wood.WoodType;
-import net.mehvahdjukaar.moonlight.core.recipe.ShapelessRecipeTemplate;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
+
 //place for all known weird hardcoded wood types from mods that aren't getting detected
 public class CompatTypes {
 
@@ -13,7 +15,9 @@ public class CompatTypes {
         BlockSetAPI.addBlockTypeFinder(WoodType.class, WoodType.Finder.simple(new ResourceLocation("domum_ornamentum:cactus"),
                 new ResourceLocation("domum_ornamentum:green_cactus_extra"), new ResourceLocation("cactus")));
         BlockSetAPI.addBlockTypeFinder(WoodType.class, WoodType.Finder.simple(new ResourceLocation("domum_ornamentum:cactus_extra"),
-                    new ResourceLocation("domum_ornamentum:cactus_extra"), new ResourceLocation("cactus")));
+                new ResourceLocation("domum_ornamentum:cactus_extra"), new ResourceLocation("cactus")));
+        TextureCache.registerSpecialTextureForBlock(Blocks.STRIPPED_OAK_LOG, "domum_ornamentum:stripped_cactus_log", new ResourceLocation("stripped_cactus"));
+        TextureCache.registerSpecialTextureForBlock(Blocks.STRIPPED_OAK_LOG, "domum_ornamentum:stripped_cactus_log_top", new ResourceLocation("stripped_cactus"));
 
         BlockSetAPI.addBlockTypeFinder(WoodType.class, WoodType.Finder.simple(
                 "ars_nouveau", "archwood", "archwood_planks", "blue_archwood_log"));
@@ -34,11 +38,22 @@ public class CompatTypes {
 
         var embur = WoodType.Finder.simple(
                 "byg", "embur", "embur_planks", "embur_pedu");
-        embur.addChild("stripped_log", "stripped_embur_pedu");
-        embur.addChild("wood", "embur_pedu_top");
-        embur.addChild("stripped_wood", "stripped_embur_pedu_top");
+        embur.addChild("log", "embur/log");
+        embur.addChild("planks", "embur/planks");
+        embur.addChild("stripped_log", "embur/stripped_log");
+        embur.addChild("stripped_wood", "embur/stripped_log");
+        embur.addChild("wood", "embur/log_top");
         BlockSetAPI.addBlockTypeFinder(WoodType.class, embur);
 
+        var bulbis = WoodType.Finder.simple(
+                "byg", "bulbis", "bulbis_planks", "bulbis_stem");
+        bulbis.addChild("stripped_log", "bulbis/stripped_log");
+        BlockSetAPI.addBlockTypeFinder(WoodType.class, bulbis);
+
+        var imparius = WoodType.Finder.simple(
+                "byg", "imparius", "imparius_planks", "fungal_imparius_stem");
+        bulbis.addChild("log", "imparius_stem");
+        BlockSetAPI.addBlockTypeFinder(WoodType.class, imparius);
 
         //mcreator mod with typos...
         BlockSetAPI.addBlockTypeFinder(WoodType.class, WoodType.Finder.simple(
@@ -136,6 +151,16 @@ public class CompatTypes {
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "blue_skies", "crescent_fruit", "crescent_fruit_leaves", "blue_skies:dusk"));
 
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "byg", "bulbis_shell", "bulbis_shell", "byg:bulbis"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "byg", "purple_bulbis_shell", "purple_bulbis_shell", "byg:bulbis"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "byg", "embur_gel", "embur_gel_block", "byg:embur"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "byg", "fungal_imparius", "fungal_imparius_block", "byg:imparius"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "byg", "fungal_imparius_filament", "fungal_imparius_filament_block", "byg:imparius"));
 
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "chipped", "flowery_mangrove", "flowery_mangrove_roots", "mangrove"));
