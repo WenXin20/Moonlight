@@ -136,6 +136,148 @@ public class CompatTypes {
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "blue_skies", "crescent_fruit", "crescent_fruit_leaves", "blue_skies:dusk"));
 
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "flowery_mangrove", "flowery_mangrove_roots", "mangrove"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "leafy_mangrove", "leafy_mangrove_roots", "mangrove"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_acacia", "cherry_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_acacia", "dead_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_acacia", "frosted_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_acacia", "golden_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_acacia", "golden_apple_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_acacia", "golden_cherry_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_acacia", "magenta_flower_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_acacia", "orange_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_acacia", "red_acacia_leaves", "acacia"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_acacia", "white_flower_acacia_leaves", "acacia"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "apple_birch", "apple_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_birch", "cherry_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_birch", "dead_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_birch", "frosted_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_birch", "golden_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_birch", "golden_apple_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_birch", "golden_cherry_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_birch", "magenta_flower_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_birch", "orange_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_birch", "red_birch_leaves", "birch"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_birch", "white_flower_birch_leaves", "birch"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "apple_dark_oak", "apple_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_dark_oak", "cherry_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_dark_oak", "dead_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_dark_oak", "frosted_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_dark_oak", "golden_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_dark_oak", "golden_apple_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_dark_oak", "golden_cherry_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_dark_oak", "magenta_flower_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_dark_oak", "orange_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_dark_oak", "red_dark_oak_leaves", "dark_oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_dark_oak", "white_flower_dark_oak_leaves", "dark_oak"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "apple_jungle", "apple_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_jungle", "cherry_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_jungle", "dead_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_jungle", "frosted_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_jungle", "golden_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_jungle", "golden_apple_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_jungle", "golden_cherry_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_jungle", "magenta_flower_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_jungle", "orange_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_jungle", "red_jungle_leaves", "jungle"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_jungle", "white_flower_jungle_leaves", "jungle"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "apple_oak", "apple_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_oak", "cherry_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_oak", "dead_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_oak", "frosted_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_oak", "golden_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_oak", "golden_apple_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_oak", "golden_cherry_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_oak", "magenta_flower_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_oak", "orange_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_oak", "red_oak_leaves", "oak"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_oak", "white_flower_oak_leaves", "oak"));
+
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "apple_spruce", "apple_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "cherry_spruce", "cherry_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "dead_spruce", "dead_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "frosted_spruce", "frosted_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_spruce", "golden_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_apple_spruce", "golden_apple_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "golden_cherry_spruce", "golden_cherry_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "magenta_flower_spruce", "magenta_flower_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "orange_spruce", "orange_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "red_spruce", "red_spruce_leaves", "spruce"));
+        BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
+                "chipped", "white_flower_spruce", "white_flower_spruce_leaves", "spruce"));
+
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
                 "colorfulazaleas", "blue_azalea", "blue_azalea_leaves", "colorfulazaleas:azule_azalea"));
         BlockSetAPI.addBlockTypeFinder(LeavesType.class, LeavesType.Finder.simple(
