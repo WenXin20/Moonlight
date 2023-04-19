@@ -55,6 +55,17 @@ public class CompatTypes {
         bulbis.addChild("log", "imparius_stem");
         BlockSetAPI.addBlockTypeFinder(WoodType.class, imparius);
 
+//        var scorched = WoodType.Finder.simple(
+//                "born_in_chaos_v1", "scorched", "scorched_planks", "scorched_log");
+//        scorched.addChild("log", "brievno");
+//        scorched.addChild("stripped_log", "obdreve");
+//        BlockSetAPI.addBlockTypeFinder(WoodType.class, scorched);
+
+        TextureCache.registerSpecialTextureForBlock(Blocks.OAK_LOG, "born_in_chaos_v1:scorched_log", new ResourceLocation("born_in_chaos_v1:blocks/brievno"));
+        TextureCache.registerSpecialTextureForBlock(Blocks.OAK_LOG, "born_in_chaos_v1:scorched_log_top", new ResourceLocation("born_in_chaos_v1:blocks/brievnovierkh1"));
+        TextureCache.registerSpecialTextureForBlock(Blocks.STRIPPED_OAK_LOG, "born_in_chaos_v1:stripped_scorched_log", new ResourceLocation("born_in_chaos_v1:blocks/obdreve"));
+        TextureCache.registerSpecialTextureForBlock(Blocks.STRIPPED_OAK_LOG, "born_in_chaos_v1:stripped_scorched_log_top", new ResourceLocation("born_in_chaos_v1:blocks/obtes"));
+
         //mcreator mod with typos...
         BlockSetAPI.addBlockTypeFinder(WoodType.class, WoodType.Finder.simple(
                 "nethers_exoticism", "jabuticaba", "jaboticaba_planks", "jabuticaba_log"));
