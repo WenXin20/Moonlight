@@ -1,6 +1,7 @@
 package net.mehvahdjukaar.moonlight.api.block;
 
 import net.mehvahdjukaar.moonlight.api.platform.PlatformHelper;
+import net.mehvahdjukaar.moonlight.api.util.Utils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
@@ -84,7 +85,7 @@ public interface ILightable {
 
     //call on use
     default InteractionResult interactWithPlayer(BlockState state, Level level, BlockPos pos, Player player, InteractionHand handIn) {
-        if(player.getAbilities().mayBuild) {
+        if(Utils.mayBuild(player, pos)) {
             ItemStack stack = player.getItemInHand(handIn);
             if (!this.isLitUp(state)) {
                 Item item = stack.getItem();
@@ -100,8 +101,8 @@ public interface ILightable {
                         return InteractionResult.sidedSuccess(level.isClientSide);
                     }
                 }
-            }else if(this.canBeExtinguishedBy(stack)){
-                if(extinguish(player, state, pos, level)){
+            } else if (this.canBeExtinguishedBy(stack)) {
+                if (extinguish(player, state, pos, level)) {
                     return InteractionResult.sidedSuccess(level.isClientSide);
                 }
             }
@@ -109,11 +110,11 @@ public interface ILightable {
         return InteractionResult.PASS;
     }
 
-    default boolean canBeExtinguishedBy(ItemStack item){
+    default boolean canBeExtinguishedBy(ItemStack item) {
         return item.getItem() instanceof ShovelItem;
     }
 
-    default void playLightUpSound(LevelAccessor world, BlockPos pos, FireSourceType type){
+    default void playLightUpSound(LevelAccessor world, BlockPos pos, FireSourceType type) {
         type.play(world, pos);
     }
 

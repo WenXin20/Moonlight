@@ -1,1 +1,1 @@
-fixed fluid tanks not saving their fluid colors correctly
+- dynamic resource packs will not clear themselves after evert relload. This will slightly increase some successive reload time but in turn will free up all the ram taken by these packs
